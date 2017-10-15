@@ -13,18 +13,21 @@
     }
     </style>
    -->
-
+   <p style="text-align: center;">
     <canvas id="myChart" width="600" height="400"></canvas>
+    </p>
     <script>
 
-
+      Chart.defaults.global.responsive = false;
         // define the chart data
       var chartData = {
+        // data : [{'x':'jan', y:10},{'x':'jan', y:10},{'x':'jan', y:10},{'x':'jan', y:10},{'x':'jan', y:10}]
+
         labels : [{% for item in labels %}
                    "{{item}}",
                   {% endfor %}],
         datasets : [{
-            label: '{{ legend }}',
+            label: ' {{ legend }}',
             fill: true,
             lineTension: 0.1,
             backgroundColor: "rgba(75,192,192,0.4)",
@@ -57,8 +60,6 @@
         type: 'bar',
         data: chartData,
         options: {
-                    // Elements options apply to all of the options unless overridden in a dataset
-                    // In this case, we are setting the border of each horizontal bar to be 2px wide
                     elements: {
                         rectangle: {
                             borderWidth: 2,
@@ -72,6 +73,8 @@
                         display: true,
                         text: 'Pariticipant Population across state'
                     }
+
+
                 }
       });
 

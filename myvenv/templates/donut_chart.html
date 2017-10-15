@@ -24,20 +24,23 @@
             fill: true,
             lineTension: 0.1,
             backgroundColor: [
-              "#2ecc71",
-              "#3498db",
-              "#95a5a6",
               "#9b59b6",
+              "#3498db",
+              "#F5F496",
+              "#2ecc71",
               "#f1c40f",
               "#e74c3c",
-              "#34495e"
+              "#34495e",
+              "#BCF71E",
+              "#F71E60",
+              "#1EF7B2"
             ],
-            borderColor: "rgba(75,192,192,1)",
+            borderColor: "#fff",
             borderCapStyle: 'butt',
             borderDash: [],
             borderDashOffset: 0.0,
             borderJoinStyle: 'miter',
-            pointBorderColor: "rgba(75,192,192,1)",
+            pointBorderColor: "#fff",
             pointBackgroundColor: "#fff",
             pointBorderWidth: 1,
             pointHoverRadius: 5,
@@ -66,9 +69,15 @@
             enabled: true,
             mode: 'single',
             callbacks: {
-              label: function(tooltipItems, data) {
-                       return tooltipItems.yLabel + ' degrees';
-                     }
+              label: function(tooltipItem, data) {
+          var dataset = data.datasets[tooltipItem.datasetIndex];
+          var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+            return previousValue + currentValue;
+          });
+          var currentValue = dataset.data[tooltipItem.index];
+          var precentage = Math.floor(((currentValue/total) * 100)+0.5);         
+          return precentage + "%";
+        }
             }
           },
         }

@@ -63,7 +63,7 @@ def product():
 #    plt.show()
     
     #return "product"
-    return render_template('donut_chart.html', values=[100,200], labels=labelss, legend='product')
+    return render_template('donut_chart.html', values=numParticipants, labels=labelss, legend='product')
 
 
 def loadInfoF(currID):
@@ -119,6 +119,9 @@ def ads():
     rows = '&rows=10'
     legend = 'Marketing Campaign'
     
+    adsCnt.clear()
+    adsType.clear()
+    
     f = urllib.request.urlopen(url_ad+rows+product)
    
     for prefix, event, value in ijson.parse(f):
@@ -130,7 +133,7 @@ def ads():
             print(prefix, ' ', event, ' ', value)
             adsType.append(value)
     
-    return render_template('line_chart.html', values=adsType, labels=adsCnt, legend=legend)
+    return render_template('donut_chart.html', values=adsCnt, labels=adsType, legend=legend)
 
 
 @app.route("/stateProduct/<int:id>")
