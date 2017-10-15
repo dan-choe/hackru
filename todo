@@ -1,0 +1,50 @@
+mongodb://danchoe:<PASSWORD>@cluster0-shard-00-00-jcgte.mongodb.net:27017,cluster0-shard-00-01-jcgte.mongodb.net:27017,cluster0-shard-00-02-jcgte.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin
+
+
+
+https://v3v10.vitechinc.com/solr/participant/select?indent=on&q=*:*&wt=json&fq=id:111253
+
+~/select?indent=on&q=*:*&wt=json&fq=id:111253
+
+
+
+Marketing Campaign Analysis
+
+
+The efforts of a company to increase awareness for a particular product or service.
+
+To increase awareness of a business or organization
+
+
+Plot
+
+[o] Product offered: Dental, Accident
+Accident Policies enrolled with promos:  no promotion, fincon, accoff10, freespouse
+
+[0] Dental products popularity accross state : % of each state
+[0] Accident products popularity accross state : % of each state
+
+
+Accident purchased over time period
+
+
+
+
+
+Under Policy
+
+insurance_coverage(individual or other members of their family)
+insurance_plan(silver)
+
+Who upgrades/purchases the insurace to add accident coverage / insurance as bundle
+
+
+>> send ads to policy holder
+activivty_type : Mail Flyer, Email, phone call, text message or other mechanism
+** firebase -> github, facebook -> messenger
+
+
+- upgrade
+
+>>
+- newly purchases

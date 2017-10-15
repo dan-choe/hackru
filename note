@@ -1,0 +1,33 @@
+
+This is because data visualization gives you
+an intuitive understanding and a quick way to test any hypothesis that you might have.
+it will also give you a different perspective as you slice data in different ways, which you can do quickly and effectively with data visualization
+
+python is particularity for data visualization purposes.
+Matplotlib which is a popular data visualization library for python
+
+-- 
+
+we can no longer easily tell that the peak traffic happens between - and -
+since lots of data, you actually get less information from the graph
+
+data aggregation and sampling
+
+aggregation is aggregate data so that important information is easily seen.
+mean, percentile
+
+summarize data, 
+
+random sampling -> select a random subset of the original data
+to get an idea about the properties of the original datat
+
+
+instaed of trying to plot all 99.. points, randomly select 100 points to sample and plot.
+
+When doing a sampling analysis, sampling a few different times to make sure that
+result you're seeing doesn't depend on the particular samples that you selected.
+
+
+
+
+
