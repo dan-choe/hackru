@@ -155,7 +155,7 @@ def stateProduct(id):
 #            if(count == 40):
 #                break
             #keys.append(str(value))
-            print(count, ' ', prefix, ' ', value)
+            print(prefix, ' ', value)
             loadInfoF(str(value))
             count += 1
     

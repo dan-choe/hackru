@@ -7,7 +7,7 @@
 
     <!-- bar chart canvas element -->
     <canvas id="myChart" width="600" height="400"></canvas>
-    <p id="pointSelected">Point selected:</p>
+    <p id="pointSelected"></p>
 
     <script>
       // Global parameters:
@@ -94,7 +94,7 @@
         console.log('maxWidth: ' + activePoint[0]._xScale.maxWidth);
         console.log('y: ' + activePoint[0]._view.y);
         console.log('index: ' + activePoint[0]._index);
-        pointSelected.innerHTML = 'Point selected... index: ' + activePoint[0]._index;
+        pointSelected.innerHTML = ' ' + activePoint[0]._index;
       };
     </script>
 {% endblock %}
